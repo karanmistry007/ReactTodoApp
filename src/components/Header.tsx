@@ -37,7 +37,7 @@ const Header = () => {
                         {/* SEARCH  */}
                         <div className="search inner-item rounded-md px-1 flex items-center justify-center w-full md:w-auto bg-gray-100" title='Search...'>
                             <SearchIcon className='' />
-                            <input className='p-0.5 md:p-1 outline-0 rounded-md w-full max-w-[300px] bg-transparent placeholder:text-sm      sm:text-base' placeholder='Search...' type="search" id='search' name='search' />
+                            <input className='p-0.5 md:p-1 outline-0 rounded-md w-full max-w-[300px] bg-transparent placeholder:text-sm placeholder:select-none sm:text-base' placeholder='Search...' type="search" id='search' name='search' />
                         </div>
                         {/* END SEARCH  */}
                     </div>
@@ -48,7 +48,7 @@ const Header = () => {
 
                         {/* USER PROFILE DROPDOWN */}
                         <div className="user-profile-dropdown w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" title='User Profile' onClick={() => setUserProfileDropdownActive(!userProfileDropdownActive)}>
-                            <img className='w-8 h-8 sm:w-10 sm:h-10 object-cover rounded-full shadow-sm' src={UserProfileImage} alt="User" />
+                            <img className='w-8 h-8 sm:w-10 sm:h-10 object-cover rounded-full shadow-sm select-none' src={UserProfileImage} alt="User" />
                         </div>
 
                         {/* USER PROFILE ITEMS */}
