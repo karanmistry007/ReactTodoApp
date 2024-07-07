@@ -22,7 +22,7 @@ function App() {
 				socketPort={import.meta.env.VITE_SOCKET_PORT}
 				siteName={getSiteName()}
 			>
-				<Router>
+				<Router basename="/todo">
 					<Header />
 					<Sidebar />
 					<Routes>

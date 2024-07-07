@@ -5,6 +5,7 @@ import proxyOptions from './proxyOptions';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+	base: '/todo/',
 	plugins: [react()],
 	server: {
 		port: 8080,
