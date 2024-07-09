@@ -26,7 +26,7 @@ const Header = () => {
                 <nav className="nav-item-container flex gap-4 justify-between items-center">
                     {/* LOGO */}
                     <div className='logo nav-item'>
-                        <a href="../todo" className="logo-link">
+                        <a href="/" className="logo-link">
                             <img src={ToDoLogo} className='w-full max-w-[115px] mix-blend-darken' alt="" />
                         </a>
                     </div>

@@ -17,3 +17,28 @@
     position: absolute;
     left: 0;
 }
+
+.categories-items::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+}
+
+.categories-items::-webkit-scrollbar-thumb {
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25) inset;
+}
+
+.categories-items::-webkit-scrollbar-thumb:hover {
+    /* Color on hover */
+    border-radius: 8px;
+
+}
+
+.categories-items::-webkit-scrollbar-track {
+    background: #e5e7eb;
+    /* Background color of the scrollbar track */
+    border-radius: 10px;
+    /* Rounding the corners */
+}
+

@@ -52,9 +52,9 @@ export default function Sidebar() {
     const [activeSidebarItem, setActiveSidebarItem] = useState<string>(sidebarItems.filter((item) => (item.link == location?.pathname))[0]?.name ? sidebarItems.filter((item) => (item.link == location?.pathname))[0]?.name : "My Day");
     return (
         <>
-            <div className={`sidebar py-2 mt-[1px] h-auto sm:h-[calc(100dvh_-_60px)] shadow-md sm:shadow-[0px_10px_25px_-5px_rgba(0,0,0,0.25)] sm:pr-2 ${sidebarCollapseActive ? "w-full sm:max-w-[280px]" : "w-full sm:w-fit"}`}>
+            <div className={`sidebar py-2 mt-[1px] h-auto sm:h-[calc(100dvh_-_60px)] shadow-md sm:shadow-[0px_10px_25px_-5px_rgba(0,0,0,0.25)] sm:pr-1 ${sidebarCollapseActive ? "w-full sm:max-w-[280px]" : "w-full sm:w-fit"}`}>
                 {/* SIDEBAR HEAD */}
-                <div className="sidebar-head flex gap-2 items-center px-4 sm:px-8 my-4 w-full">
+                <div className="sidebar-head flex gap-2 items-center px-4 sm:px-8 my-2 sm:my-4 w-full">
                     <div className="sidebar-collapse cursor-pointer" onClick={() => { setSidebarCollapseActive(!sidebarCollapseActive) }}>
                         <FaAngleRight className="w-6 h-6 hidden" />
                         <TbMenu2 className="w-6 h-6" />
