@@ -51,15 +51,17 @@ function App() {
 			>
 				<Router basename="/todo">
 					<Header />
-				<div className='sm:flex'>
-					<Sidebar />
-					<Routes>
-						<Route path="/" element={<Navigate to="/my-task/list" replace />} />
-						{sidebarItems.map((item, index) => (
-							<Route key={index} path={item.link} element={<Dashboard name={item.name} link={item.link} />} />
-						))}
-					</Routes>
-						</div>
+					<div className='sm:flex'>
+						<Sidebar />
+						<Routes>
+							<Route path="/" element={<Navigate to="/my-day/list" replace />} />
+							<Route path="/my-day/list" element={<Dashboard name="My Day" link="/my-day/list" />} />
+							<Route path="/important/list" element={<Dashboard name="Important" link="/important/list" />} />
+							<Route path="/inbox/list" element={<Dashboard name="Inbox" link="/inbox/list" />} />
+							<Route path="/planned/list" element={<Dashboard name="Planned" link="/planned/list" />} />
+							<Route path="/tasks/list" element={<Dashboard name="Tasks" link="/tasks/list" />} />
+						</Routes>
+					</div>
 				</Router>
 			</FrappeProvider>
 		</div>
