@@ -4,8 +4,6 @@ import { PiBellRingingLight } from "react-icons/pi";
 import { PiBellRingingFill } from "react-icons/pi";
 import { IoInformationCircle } from "react-icons/io5";
 import { PiCalendarDotsLight } from "react-icons/pi";
-import { RiPlayListAddLine } from "react-icons/ri";
-import { FaListCheck } from "react-icons/fa6";
 import { PiListChecks } from "react-icons/pi";
 import { PiListBullets } from "react-icons/pi";
 
@@ -74,7 +72,7 @@ function CreateTodo({ }: Props) {
             <div className="create-todo-container bg-purple-200 p-5 w-full">
                 <div className="create-todo bg-white p-2.5 sm:p-5 flex flex-col shadow-[0px_0px_15px_0px_rgba(0,0,0,0.1)] rounded-md">
                     <div className="row-1 flex gap-1 sm:gap-5 justify-between items-center">
-                        <div className={`save hover:bg-gray-100-todo-button bg-transparent rounded-full p-0.5 w-fit text-xs sm:text-sm border border-gray-600 cursor-pointer`} onClick={() => { setSaveNewTodo(!saveNewTodo) }}>
+                        <div className={`save hover:bg-gray-100-todo-button bg-transparent rounded-full p-0.5 w-fit text-xs sm:text-sm border border-gray-600 cursor-pointer`} onClick={() => { setSaveNewTodo(!saveNewTodo) }} title="Create" >
                             <FaCheck className={`${saveNewTodo ? "opacity-1" : "opacity-0"}`} />
                         </div>
                         <input type="text" className="outline-0 placeholder:text-gray-700 py-1.5 px-2 w-full" placeholder="Add a Task..." name="createTodo" id="createTodo" />
