@@ -24,12 +24,12 @@ function App() {
 				enableSocket={false}
 				siteName={getSiteName()}
 			>
-				<Router>
+				<Router basename="/todo">
 					<Header />
 					<div className='sm:flex'>
 						<Sidebar />
 						<Routes>
-							{/* <Route path="/" element={<Navigate to="/my-day/list" replace />} /> */}
+							<Route path="/" element={<Navigate to="/my-day/list" replace />} />
 							<Route path="/my-day/list" element={<Dashboard name="My Day" link="/my-day/list" />} />
 							<Route path="/important/list" element={<Dashboard name="Important" link="/important/list" />} />
 							<Route path="/inbox/list" element={<Dashboard name="Inbox" link="/inbox/list" />} />
