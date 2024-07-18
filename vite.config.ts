@@ -15,7 +15,7 @@ export default defineConfig({
 		}
 	},
 	build: {
-		outDir: '../react_todo/public/todo',
+		outDir: 'build',
 		emptyOutDir: true,
 		target: 'es2015',
 	},
