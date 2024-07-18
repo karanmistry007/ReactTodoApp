@@ -77,7 +77,7 @@ const ListItem = () => {
     };
 
     const haldleUpdatedDrawerData = (data: useTodoData) => {
-        console.log(data)
+        // console.log(data)
         setCompleteTodo(data.completeTodo);
         setImportantTodo(data.importantTodo);
         setIsSendReminder(data.isSendReminder);
@@ -86,10 +86,10 @@ const ListItem = () => {
         setSelectedCategories(data.selectedCategories);
     }
 
-    useEffect(() => {
-        console.log(todoData)
+    // useEffect(() => {
+        // console.log(todoData)
 
-    }, [todoData])
+    // }, [todoData])
 
 
     // CATEGORIES MULTISELECT HANDLER

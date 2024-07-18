@@ -20,7 +20,8 @@ function App() {
 	return (
 		<div className="App">
 			<FrappeProvider
-				socketPort={import.meta.env.VITE_SOCKET_PORT}
+				// socketPort={import.meta.env.VITE_SOCKET_PORT}
+				enableSocket={false}
 				siteName={getSiteName()}
 			>
 				<Router basename="/todo">
