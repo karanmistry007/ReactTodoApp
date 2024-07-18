@@ -24,7 +24,7 @@ function App() {
 				enableSocket={false}
 				siteName={getSiteName()}
 			>
-				<Router>
+				<Router basename="/todo">
 					<Header />
 					<div className='sm:flex'>
 						<Sidebar />
